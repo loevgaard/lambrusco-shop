@@ -33,8 +33,7 @@ final class Kernel extends BaseKernel
         $container->addCompilerPass(new class() implements CompilerPassInterface {
             public function process(ContainerBuilder $container): void
             {
-                $container->removeDefinition('debug.security.firewall');
-                $container->removeDefinition('api_platform.listener.request.add_format');
+                //$container->removeDefinition('debug.security.firewall');
             }
         });
     }
