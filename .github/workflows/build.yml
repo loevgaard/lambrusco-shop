@@ -140,10 +140,6 @@ jobs:
                 name: Validate composer.json
                 run: composer validate --ansi --strict --no-check-publish
                 
-            -   
-                name: Run security check
-                run: symfony security:check
-
             -
                 name: Check coding standard
                 if: matrix.php != '7.4'
